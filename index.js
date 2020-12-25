@@ -3,7 +3,7 @@ var readlinesync=require("readline-sync");
 const chalk=require("chalk");
 
 var username=readlinesync.question(chalk.bold(chalk.green("what is your name? ")))
-score=0;
+ var score=0;
 
 console.log(chalk.blue("wellcome "+ username +" Do you know karthik? "))
 //branching
@@ -20,9 +20,9 @@ function play(question,answer){
     
     console.log("wrong");
     
-    score
+    score=-1
   }
-  console.log(" your corent score",score)
+  console.log(" your current score",score)
   
   console.log("-----------")
 
@@ -31,9 +31,9 @@ function play(question,answer){
 //array of objects
 var questions=[{
   question: "where do i live? ",
-  answer:"Bangalure"
+  answer:"Bangalore"
 },{
-  question:"my faorite superhero would be? ",
+  question:"my favorite superhero would be? ",
   answer:"Iron man"
 
 },{
